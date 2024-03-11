@@ -28,6 +28,10 @@ body {
     justify-content: center;
 }
 
+button{
+    cursor: pointer;
+}
+
 .bookiPage{
     width: 100%;
     max-width: 1440px;
@@ -40,6 +44,7 @@ body {
     width: 100%;
     height: 79px;
     display: flex;
+    margin-bottom: 30px;
 }
 
 .bookiHeaderLogo{
@@ -48,6 +53,7 @@ body {
     margin: 0;
     margin-top: auto;
     margin-bottom: auto;
+    cursor: pointer;
 }
 .selectorPageHeader{
     position: absolute;
@@ -59,6 +65,9 @@ body {
 }
 .selectorTxt{
     color: var(--main-color);
+}
+.selectorTxtNotSelected{
+    color: #000000;
 }
 .headerNav{
     display: flex;
@@ -137,6 +146,10 @@ p{
     border: 2px solid var(--filter-bg-color);
     border-radius: 25px;
     margin-right: 15px;
+    cursor: pointer;
+}
+.oneFilter:hover{
+    background-color: var(--filter-bg-color);
 }
 .oneFilterIcon{
     height: 22px;
@@ -174,16 +187,21 @@ p{
     margin-top: 65px;
     margin-bottom: 30px;
 }
+.activitiesContainer{
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .allActivities{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 65px;
 }
 .oneActitivie{
     width: 297.5px;
     height: 439px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px #0000001A;
+    cursor: pointer;
 }
 .oneActivitieImg{
     border-radius: 20px 20px 0 0;
@@ -202,12 +220,23 @@ p{
 }
 .footerContainer{
     width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 123px;
+    padding: 20px;
     margin-top: 35px;
     background-color: var(--main-bg-color);
+    display: flex;
+}
+.oneFooterContainer{
+    width: calc(100% / 3);
+}
+.oneFooterTitle{
+    font-weight: bold;
+    font-size: 21px;
+}
+.oneFooterTxt{
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .hebergementsContainer{
@@ -221,6 +250,7 @@ p{
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px #0000001A;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .hebergementImg{
@@ -248,6 +278,7 @@ p{
 
 .fa-solid {
     color: var(--main-color);
+    cursor: pointer; /* new */
 }
 
 .section-title {
