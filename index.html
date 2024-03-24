@@ -13,22 +13,31 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
-<!-- question pour <footer><header> -->
-
 <body>
     <div class="bookiPage">
         <header class="header">
             <img src="./images/logo/Booki.png" alt="booki logo" class="bookiHeaderLogo"/>
-            <div class="selectorPageHeader">
-                <a href="#accomodationContainer" class="headerNav headerSelected">
-                    <div class="hebergementNav firstNavSelector">
+            <div class="selectorPageHeader headerLandscape">
+                <a href="#accomodationContainer" class="headerNav">
+                    <div class="hebergementNav">
                         <p class="selectorTxt">Hébergements</p>
                     </div>
                 </a>
                 <a href="#activitiesContainer" class="headerNav">
                     <div class="hebergementNav">
-                        <p class="selectorTxt selectorTxtNotSelected">Activités</p>
+                        <p class="selectorTxt">Activités</p>
+                    </div>
+                </a>
+            </div>
+            <div class="selectorPageHeader headerMobile">
+                <a href="#accomodationContainer" class="headerNavMobile">
+                    <div class="hebergementNavMobile">
+                        <p class="selectorTxtMobile">Hébergements</p>
+                    </div>
+                </a>
+                <a href="#activitiesContainer" class="headerNavMobile">
+                    <div class="hebergementNavMobile">
+                        <p class="selectorTxtMobile">Activités</p>
                     </div>
                 </a>
             </div>
@@ -43,25 +52,38 @@
                     </div>
                     <input type="text" name="Ville" id="town" placeholder="Ville" class="inputTown" value="Marseille, France"/>
                     <button type="submit" class="searchBtn">Rechercher</button>
+                    <div class="searchBtnSmall">
+                        <i class="fa-solid fa-search searchLogo" aria-hidden="true"></i>
+                    </div>
                 </form>
             </div>
             <div class="filtersContainer">
                 <h2 class="filterTopTxt">Filters</h2>
-                <div class="oneFilter">
-                    <img src="./images/others/moneyIcon.png" alt="Money Logo" class="oneFilterIcon"/>
-                    <h2 class="oneFilterTxt">Économique</h2>
-                </div>
-                <div class="oneFilter">
-                    <img src="./images/others/familyIcon.png" alt="Family Logo" class="oneFilterIcon"/>
-                    <h2 class="oneFilterTxt">Familial</h2>
-                </div>
-                <div class="oneFilter">
-                    <img src="./images/others/heartIcon.png" alt="Heart Logo" class="oneFilterIcon"/>
-                    <h2 class="oneFilterTxt">Romantique</h2>
-                </div>
-                <div class="oneFilter">
-                    <img src="./images/others/fireIcon.png" alt="Fire Logo" class="oneFilterIcon filterSelected"/>
-                    <h2 class="oneFilterTxt">Nos pépites</h2>
+                <div class="allFilters">
+                    <div class="oneFilter">
+                        <div class="imgFilterContainer">
+                            <img src="./images/others/moneyIcon.png" alt="Money Logo" class="oneFilterIcon"/>
+                        </div>
+                        <h2 class="oneFilterTxt">Économique</h2>
+                    </div>
+                    <div class="oneFilter">
+                        <div class="imgFilterContainer">
+                            <img src="./images/others/familyIcon.png" alt="Family Logo" class="oneFilterIcon"/>
+                        </div>
+                        <h2 class="oneFilterTxt">Familial</h2>
+                    </div>
+                    <div class="oneFilter">
+                        <div class="imgFilterContainer">
+                            <img src="./images/others/heartIcon.png" alt="Heart Logo" class="oneFilterIcon"/>
+                        </div>
+                        <h2 class="oneFilterTxt">Romantique</h2>
+                    </div>
+                    <div class="oneFilter">
+                        <div class="imgFilterContainer">
+                            <img src="./images/others/fireIcon.png" alt="Fire Logo" class="oneFilterIcon"/>
+                        </div>
+                        <h2 class="oneFilterTxt">Nos pépites</h2>
+                    </div>
                 </div>
             </div>
             <div class="quantityFoundAccomodation">
