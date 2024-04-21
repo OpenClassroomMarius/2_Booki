@@ -501,7 +501,7 @@ h1{
         width: calc(100% - 50px - 50px);
     }
     .oneFilter{
-        width: calc(162.5px - 19px - 19px - 2px - 2px);
+        width: calc(50% - 19px - 19px - 2px - 2px - 10px);
         margin-right: 0px;
     }
     .allFilters{
