@@ -405,6 +405,13 @@ h1{
     .hebergements {
         width: 100%;
     }
+    .hebergementsCard{
+        width: calc(33% - 5px - 5px - 10px);
+    }
+    .hebergementImg{
+        width: 100%;
+        object-fit: cover;
+    }
 
     .populaires {
         width: 100%;
